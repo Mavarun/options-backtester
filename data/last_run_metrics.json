@@ -1,0 +1,70 @@
+{
+  "bs_call": 10.450583572185565,
+  "bs_put": 5.573526022256971,
+  "parity_err": 0.0,
+  "cost_table": [
+    {
+      "strategy": "long_straddle",
+      "n_trades": 19,
+      "uncosted_pnl": -5.508610300036992,
+      "costed_pnl": -16.70290055106813,
+      "pnl_inflation": 11.194290251031138,
+      "uncosted_sharpe": -0.2048568251337894,
+      "costed_sharpe": -0.6264044953188989,
+      "max_dd_costed": -0.1991577045424895
+    },
+    {
+      "strategy": "iron_condor",
+      "n_trades": 19,
+      "uncosted_pnl": -2.9087935704424326,
+      "costed_pnl": -25.297374072504706,
+      "pnl_inflation": 22.388580502062272,
+      "uncosted_sharpe": -0.25163411661301394,
+      "costed_sharpe": -1.8878448408735862,
+      "max_dd_costed": -0.2507777144456501
+    },
+    {
+      "strategy": "covered_call",
+      "n_trades": 19,
+      "uncosted_pnl": -8.018466090361215,
+      "costed_pnl": -13.988754224244488,
+      "pnl_inflation": 5.9702881338832725,
+      "uncosted_sharpe": -0.2238734100930999,
+      "costed_sharpe": -0.39017756590018093,
+      "max_dd_costed": -0.26311803255069954
+    }
+  ],
+  "walk_forward": [
+    {
+      "strategy": "long_straddle",
+      "train_end": "2021-02-26",
+      "IS_costed_pnl": -22.73275343112682,
+      "OOS_costed_pnl": 2.497190912521215,
+      "IS_costed_sharpe": -2.93131982349616,
+      "OOS_costed_sharpe": 0.18188989304765565,
+      "IS_trades": 12,
+      "OOS_trades": 8
+    },
+    {
+      "strategy": "iron_condor",
+      "train_end": "2021-02-26",
+      "IS_costed_pnl": -8.603209429710677,
+      "OOS_costed_pnl": -14.187621513563581,
+      "IS_costed_sharpe": -2.018711346185058,
+      "OOS_costed_sharpe": -2.3634352534445493,
+      "IS_trades": 12,
+      "OOS_trades": 8
+    },
+    {
+      "strategy": "covered_call",
+      "train_end": "2021-02-26",
+      "IS_costed_pnl": 1.539112329536402,
+      "OOS_costed_pnl": 9.205873898454403,
+      "IS_costed_sharpe": 0.12396682403376463,
+      "OOS_costed_sharpe": 0.5626925930567748,
+      "IS_trades": 12,
+      "OOS_trades": 8
+    }
+  ],
+  "note": "Synthetic path only. Not live PnL. Not alpha."
+}
